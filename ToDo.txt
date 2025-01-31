@@ -3,4 +3,4 @@ color adjustments           -       x
 contact.css                 -       x
 donate.css border fix       -       x
 footerNav name change       -       x              
-footer Icons funk.          - Also.
+footer Icons funk.          - 
