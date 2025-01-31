@@ -6,7 +6,8 @@ body {
     font-style: normal;
     font-variation-settings: "wdth" width;
     background-color: rgb(235, 242, 250);
-  }
+}
+
 
 
 /*Landing Page*/
@@ -16,8 +17,7 @@ body {
     width: 100%;
     object-fit: cover;
     filter: brightness(0.35);
-  }
-
+}
 
 .eco-logo {
     position: absolute;
@@ -26,7 +26,8 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 25px;
-  }
+}
+
 .headline {
     position: absolute;
     left: 50px;
@@ -35,7 +36,8 @@ body {
     font-size: 70px;
     width: 500px;
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  }
+}
+
 .acent {
     color: #10898d;
     }
@@ -51,12 +53,20 @@ body {
     margin-left: 40px;
     font-size: 25px;
     transition: 0.6s
-    
-  }
+}
 .menu-link:hover {
     color: #032f3c;
     transform: scale(1.15);
-  }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    font-size: 28px;
+
+}
 
 nav {
     background-color:#046169;
@@ -69,19 +79,9 @@ nav {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
 }
-
-.nav-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 50px;
-    font-size: 28px;
-
-  }
-
 .nav:hover {
     background-color:#217b7e;
-  }
+}
 
 .scroll-top {
     color:	#032f3c;
@@ -95,7 +95,6 @@ nav {
     font-size: 30px;
     transition: 0.5s
 }
-
 .scroll-top:hover {
     color: cornflowerblue;
     transform: scale(1.1);
@@ -111,13 +110,16 @@ nav {
     display: flex;
         gap: 50px;
 }
+
 .scd-head {
     text-align: center;
     font-size: 40px;
 }
+
 .video-container {
     width: 50%;
 }
+
 .youtube {
     width: 560px;
     height: 315px;
@@ -136,7 +138,6 @@ nav {
     cursor:default;
     transition: ease 0.5s;
 }
-
 .box:hover {
     transform: scale(1.03);
 }
@@ -147,17 +148,16 @@ nav {
     cursor:default;
     transition: ease 0.5s;
 }
-
 .img1:hover {
     transform: scale(1.03);
 }
+
 .img2 {
     border-radius: 30px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     cursor:default;
     transition: ease 0.5s;
 }
-
 .img2:hover {
     transform: scale(1.03);
 }
@@ -166,46 +166,53 @@ nav {
 
 /*footer*/
 
-footer{
-    background-color: #111;
-}
-.footerContainer{
+.footerContainer {
     width: 100%;
     padding: 70px 30px 20px ;
 }
-.socialIcons{
+
+footer {
+    background-color: #111;
+}
+
+.socialIcons {
     display: flex;
     justify-content: center;
 }
-.socialIcons a{
+
+.socialIcons a {
     text-decoration: none;
     padding:  10px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
 }
-.socialIcons a i{
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a i {
     font-size: 2em;
     color: black;
     opacity: 0,9;
 }
-.socialIcons a:hover{
-    background-color: #111;
-    transition: 0.5s;
-}
-.socialIcons a:hover i{
+.socialIcons a:hover i {
     color: white;
     transition: 0.5s;
 }
-.footerNav{
+
+.footerNav {
     margin: 30px 0;
 }
-.footerNav ul{
+
+.footerNav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
-.footerNav ul li a{
+
+.footerNav ul li a {
     color:white;
     margin: 20px;
     text-decoration: none;
@@ -213,18 +220,21 @@ footer{
     opacity: 0.7;
     transition: 0.5s;
 }
-.footerNav ul li a:hover{
+.footerNav ul li a:hover {
     opacity: 1;
 }
-.footerBottom{
+
+.footerBottom {
     background-color: #000;
     padding: 20px;
     text-align: center;
 }
-.footerBottom p{
+
+.footerBottom p {
     color: white;
 }
-.designer{
+
+.designer {
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -236,18 +246,36 @@ footer{
 
 /*Größen basierter Aufbau*/
 
-@media (max-width: 700px){
-    .footerNav ul{
+@media (max-width: 700px) {
+    .footerNav ul {
         flex-direction: column;
     } 
-    .footerNav ul li{
+
+    .footerNav ul li {
         width:100%;
         text-align: center;
         margin: 10px;
     }
-    .socialIcons a{
+
+    .socialIcons a {
         padding: 8px;
         margin: 4px;
+    }
+
+    .description1 {
+        flex-direction: column;
+        align-items: center;
+        height: unset;
+    }
+
+    .video-container {
+        width: unset;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: none;
     }
 }
 
@@ -257,19 +285,3 @@ footer{
         height: calc(56.25vw * 0.4);
     }
 }
-
-@media (max-width: 700px ) {
-    .description1 {
-        flex-direction: column;
-        align-items: center;
-        height: unset;
-    }
-    .video-container {
-        width: unset;
-        display: flex;
-        justify-content: center;
-    }
-    .container {
-        display: none;
-    }
-} 

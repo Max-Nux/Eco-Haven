@@ -19,7 +19,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.team{
+.team {
     position: absolute;
     top: 5%;
     right: 5%;
@@ -68,7 +68,6 @@ body {
     text-decoration: none;  
     transition: ease 0.5s;
 }
-
 .button:hover {
     transform: scale(1.1);
     font-weight: 800;
@@ -85,7 +84,6 @@ body {
     width: calc(100vw * 0.2);
     transition: .5s;
 }
-
 .logo:hover {
     transform: scale(1.1);
 }
