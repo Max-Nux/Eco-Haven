@@ -5,6 +5,7 @@ body {
     font-weight: weight;
     font-style: normal;
     font-variation-settings: "wdth" width;
+    background-color: #F4F9FF;
   }
 .header-image {
     height: 100vh;
@@ -123,6 +124,19 @@ nav {
     text-decoration: underline;
     transform: scale(1.1);
 }
+
+.box {
+    color: #ffffff;
+    font-size: 24px;
+    background-color: #7ea3bf;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    
+}
+
 
 
 
