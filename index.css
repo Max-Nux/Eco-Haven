@@ -5,9 +5,8 @@ body {
     font-weight: weight;
     font-style: normal;
     font-variation-settings: "wdth" width;
-    background-color: #F4F9FF;
+    background-color: rgb(235, 242, 250);
   }
-
 
 
 /*Landing Page*/
@@ -23,7 +22,7 @@ body {
 .eco-logo {
     position: absolute;
     left: 16px;
-    top: 70px;
+    top: 80px;
     height: 150px;
     width: 150px;
     border-radius: 25px;
@@ -32,13 +31,13 @@ body {
     position: absolute;
     left: 50px;
     top: 300px;
-    color: wheat;
+    color: aliceblue;
     font-size: 70px;
     width: 500px;
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
   }
-.green {
-    color: rgb(22, 136, 22);
+.acent {
+    color: #10898d;
     }
 
 
