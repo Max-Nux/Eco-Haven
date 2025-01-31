@@ -49,19 +49,19 @@ body {
     color: #202020;
     text-decoration: none;
     font-weight: 650;
-    margin-left: 16px;
+    margin-left: 40px;
     font-size: 25px;
     transition: 0.6s
     
   }
 .menu-link:hover {
-    color: rgb(46, 137, 55);
-    transform: scale(1.1);
+    color: #032f3c;
+    transform: scale(1.15);
   }
 
 nav {
-    background-color:rgb(175, 225, 175);
-    padding: 10px;
+    background-color:#046169;
+    padding: 15px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -69,7 +69,6 @@ nav {
     z-index: 1000;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
-    opacity: 0.5;
 }
 
 .nav-container {
@@ -82,17 +81,16 @@ nav {
   }
 
 .nav:hover {
-    opacity: 0.8;
-    background-color:rgb(139, 178, 139);
+    background-color:#217b7e;
   }
 
 .scroll-top {
-    color: rgb(9, 73, 16);
+    color:	#032f3c;
     text-decoration: none;
     position: absolute;
     z-index: 1001;
-    left: 15px;
-    top: 5px;
+    left: 25px;
+    top: 10px;
     position: fixed;
     font-weight: 650;
     font-size: 30px;
@@ -100,7 +98,7 @@ nav {
 }
 
 .scroll-top:hover {
-    color:wheat;
+    color: cornflowerblue;
     transform: scale(1.1);
 }
 
