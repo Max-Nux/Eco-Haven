@@ -7,6 +7,11 @@ body {
     font-variation-settings: "wdth" width;
     background-color: #F4F9FF;
   }
+
+
+
+/*Landing Page*/
+
 .header-image {
     height: 100vh;
     width: 100%;
@@ -35,35 +40,11 @@ body {
 .green {
     color: rgb(22, 136, 22);
     }
-.description1 {
-    height: 300px;
-    padding: 30px 100px;
-    display: flex;
-        gap: 50px;
-}
-.half-with {
-    width: 50%;
 
-}
-.quarter-with {
-    width: 25%;
-
-}
-.scd-head {
-    text-align: center;
-    font-size: 40px;
-}
-.video-container {
-    width: 50%;
-}
-.youtube {
-    width: 560px;
-    height: 315px;
-    /* @media geht auch hier. w und h Ersetzen */
-}
 
 
 /*Nav Bar*/
+
 .menu-link {
     color: #202020;
     text-decoration: none;
@@ -75,7 +56,6 @@ body {
   }
 .menu-link:hover {
     color: rgb(46, 137, 55);
-    text-decoration: underline;
     transform: scale(1.1);
   }
 
@@ -101,7 +81,7 @@ nav {
 
   }
 
-  .nav:hover {
+.nav:hover {
     opacity: 0.8;
     background-color:rgb(139, 178, 139);
   }
@@ -121,8 +101,30 @@ nav {
 
 .scroll-top:hover {
     color:wheat;
-    text-decoration: underline;
     transform: scale(1.1);
+}
+
+
+
+/*Modularer Aufbau*/
+
+.description {
+    height: 300px;
+    padding: 30px 100px;
+    display: flex;
+        gap: 50px;
+}
+.scd-head {
+    text-align: center;
+    font-size: 40px;
+}
+.video-container {
+    width: 50%;
+}
+.youtube {
+    width: 560px;
+    height: 315px;
+    /* @media geht auch hier. w und h Ersetzen */
 }
 
 .box {
@@ -134,13 +136,39 @@ nav {
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
-    
+    cursor:default;
+    transition: ease 0.5s;
+}
+
+.box:hover {
+    transform: scale(1.03);
+}
+
+.img1 {
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    cursor:default;
+    transition: ease 0.5s;
+}
+
+.img1:hover {
+    transform: scale(1.03);
+}
+.img2 {
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    cursor:default;
+    transition: ease 0.5s;
+}
+
+.img2:hover {
+    transform: scale(1.03);
 }
 
 
 
-
 /*footer*/
+
 footer{
     background-color: #111;
 }
@@ -206,6 +234,11 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
+
+
+
+/*Größen basierter Aufbau*/
+
 @media (max-width: 700px){
     .footerNav ul{
         flex-direction: column;
@@ -233,9 +266,6 @@ footer{
         flex-direction: column;
         align-items: center;
         height: unset;
-    }
-    .half-with {
-        width: unset;
     }
     .video-container {
         width: unset;
