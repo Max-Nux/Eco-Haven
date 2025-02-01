@@ -5,7 +5,7 @@ body {
     font-weight: weight;
     font-style: normal;
     font-variation-settings: "wdth" width;
-    background-color: rgb(235, 242, 250);
+    background-color: rgb(221, 234, 251);
 }
 
 
@@ -107,13 +107,21 @@ body {
 .description {
     height: 300px;
     padding: 30px 100px;
-    display: flex;
-        gap: 50px;
+    display: flex;          /*Ganzen Screen nutzen*/
+    gap: 50px;              /*Abstand zwischen Box und img*/
 }
 
 .scd-head {
     text-align: center;
     font-size: 40px;
+}
+
+.maps {
+    border-radius: 30px;
+    transition: ease 0.5s;
+}
+.maps:hover {
+    transform: scale(1.03);
 }
 
 .video-container {
@@ -123,6 +131,11 @@ body {
 .youtube {
     width: 533px;
     height: 300px;
+    border-radius: 30px;
+    transition: ease 0.5s;
+}
+.youtube:hover {
+    transform: scale(1.03);
 }
 
 .box {
