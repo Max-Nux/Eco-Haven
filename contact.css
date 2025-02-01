@@ -22,6 +22,7 @@ body {
     padding: 20px;
     border-radius: 15px;
     
+    /*Transparent*/
     background: rgba(233, 233, 233, 0.1);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border: 2px solid rgba(233, 233, 233, 0.4);
