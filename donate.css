@@ -3,7 +3,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #e5e5e5;
+    background-color:#d4d4d4;
     color: #333;
     padding: 20px;
     text-align: center;
@@ -13,7 +13,7 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background: #ffffff;
+    background: #e9e9e9;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -39,16 +39,29 @@ input {
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 3px solid #878787;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    transition: ease 0.5s;
+}
+input:invalid {
+    border: 3px solid #f44336;
+}
+input:hover {
+    transform: scale(1.03)
 }
 
 select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 3px solid #878787;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    transition: ease 0.5s;
+}
+select:hover {
+    transform: scale(1.03)   
 }
 
 .submit {
@@ -59,26 +72,30 @@ select {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     margin-top: 30px;
+    margin-bottom: 25px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
 }
 .submit:hover {
     background-color: #218838;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .back {
     display: inline-block;
     margin-bottom: 20px;
-    padding: 10px 15px;
+    padding: 7px;
     background-color: #f44336;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
-    transition: all 0.3s ease;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    border-radius: 20px;
 }
 .back:hover {
     background-color: #d32f2f;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
