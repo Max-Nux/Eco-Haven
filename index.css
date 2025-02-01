@@ -121,9 +121,8 @@ nav {
 }
 
 .youtube {
-    width: 560px;
-    height: 315px;
-    /* @media geht auch hier. w und h Ersetzen */
+    width: 533px;
+    height: 300px;
 }
 
 .box {
@@ -149,7 +148,7 @@ nav {
     transition: ease 0.5s;
 }
 .img1:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 .img2 {
@@ -159,7 +158,7 @@ nav {
     transition: ease 0.5s;
 }
 .img2:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 
@@ -279,7 +278,7 @@ footer {
     }
 }
 
-@media (max-width: 1300px ) {
+@media (max-width: 1300px) {
     .youtube {
         width: calc(100vw * 0.4) ;
         height: calc(56.25vw * 0.4);
