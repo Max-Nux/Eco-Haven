@@ -4,3 +4,13 @@ contact.css                 -       x
 donate.css border fix       -       x
 footerNav name change       -       x              
 footer Icons funk.          - 
+
+
+
+
+
+
+
+Merken:
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
