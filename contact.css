@@ -70,8 +70,8 @@ textarea {
     border-radius: 10px;
     resize: none;
     overflow: hidden;
-    transition: ease 0.5s;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    transition: ease 0.5s;
 }
 textarea:invalid {
     border: 3px solid #f44336;
@@ -88,11 +88,11 @@ textarea:hover {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    transition: all 0.5s ease;
     margin-top: 30px;
     margin-bottom: 25px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
 }
 .submit:hover {
     background-color: #218838;
@@ -101,15 +101,17 @@ textarea:hover {
 
 .back {
     display: inline-block;
-    margin-bottom: 20px;
     padding: 7px;
     background-color: #f44336;
     color: white;
+    cursor: pointer;
     text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
+    margin-bottom: 20px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
     transition: all 0.5s ease;
-    border-radius: 20px;
 }
 .back:hover {
     background-color: #d32f2f;
