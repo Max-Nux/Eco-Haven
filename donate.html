@@ -2,72 +2,34 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Spenden</title>
     <link rel="stylesheet" href="donate.css" />
-
-    <script src="donate.js"></script>
   </head>
   <body>
+    <div class="container">
+      <h1 class="title">Spenden</h1>
 
-    <h1 class="title">Spenden</h1>
-
-
-    <div class="form-container">
       <form>
         <div class="vname">
           <label for="vname">Vorname</label>
-          <input
-            type="text"
-            id="vname"
-            name="vname"
-            placeholder="Vorname"
-            required
-          />
+          <input type="text" id="vname" name="vname" placeholder="Vorname" required/>
         </div>
-
-        <br />
 
         <div class="nname">
           <label for="nname">Nachname</label>
-          <input
-            type="text"
-            id="nname"
-            name="nname"
-            placeholder="Nachname"
-            required
-          />
+          <input type="text" id="nname" name="nname" placeholder="Nachname" required/>
         </div>
-
-        <br />
 
         <div class="mail">
           <label for="mail">E-Mail</label>
-          <input
-            type="email"
-            id="mail"
-            name="mail"
-            placeholder="E-Mail"
-            required
-          />
+          <input type="email" id="mail" name="mail" placeholder="E-Mail" required/>
         </div>
-
-        <br />
 
         <div class="amount">
           <label for="amount">Spenden Höhe (in €)</label>
-          <input
-            type="number"
-            id="amount"
-            name="amount"
-            placeholder="Spenden Höhe (in €)"
-            min="1"
-            value="100"
-            required
-          />
+          <input type="number" id="amount" name="amount" placeholder="Spenden Höhe (in €)" min="1" value="100" required/>
         </div>
-
-        <br />
 
         <div class="payop">
           <label for="payop">Bezahl option</label>
@@ -79,18 +41,9 @@
           </select>
         </div>
 
-        <br />
-
-        <div class="buttons">
-          <input type="reset" />
-
-          <br />
-
-          <a href="index.html"><input type="submit"></a>
-        </div>
+        <input class="submit" type="submit">
 
         <a class="back" href="index.html">Zurück zur Startseite</a>
-
       </form>
     </div>
   </body>

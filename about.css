@@ -56,6 +56,11 @@ body {
     padding-bottom: 1px;
 }
 
+.line {
+    font-weight: 1000;
+    padding-bottom: 20px;
+}
+
 .button {
     display: inline-block;
     color: aliceblue;
@@ -86,9 +91,4 @@ body {
 }
 .logo:hover {
     transform: scale(1.1);
-}
-
-.line {
-    font-weight: 1000;
-    padding-bottom: 20px;
 }

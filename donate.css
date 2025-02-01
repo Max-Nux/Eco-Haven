@@ -1,100 +1,84 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    line-height: 1.6;
     margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    color: #333;
     padding: 20px;
     text-align: center;
-  }
-  
-  /* Back Link */
-  .back {
-    display: inline-block;
-    margin-bottom: 20px;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    position: absolute;
-    transition: all 0.3s ease;
-  }
-  
-  .back:hover {
-    background-color: #0056b3;
+}
 
-  }
-  
-  /* Form Container */
-  .form-container {
-    background-color: white;
-    max-width: 400px;
-    margin: auto;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #222;
+}
   
-  /* Form Elements */
-  form {
+form {
     display: flex;
     flex-direction: column;
-  }
+}
   
-  label {
+label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-  }
+}
   
-  input {
+input {
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
+}
 
-  select {
+select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
-  /* Button Styling */
-  .buttons input {
+}
+
+.submit {
     width: 100%;
-    padding: 10px;
     border: none;
+    background-color: #28a745;
     color: white;
     cursor: pointer;
-    border-radius: 5px;
     font-size: 16px;
-  }
-  
-  .buttons input[type="reset"] {
-    background-color: #f44336;
-    margin-bottom: 10px;
-    transition: ease 0.5s;
-  }
-  
-  .buttons input[type="reset"]:hover {
-    background-color: #d32f2f;
-    transform: scale(1.05);
-  }
-  
-  .buttons input[type="submit"] {
-    background-color: #28a745;
-    transition: ease 0.5s;
-
-  }
-  
-  .buttons input[type="submit"]:hover {
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+.submit:hover {
     background-color: #218838;
     transform: scale(1.05);
+}
 
-  }
-  
+.back {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.back:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
