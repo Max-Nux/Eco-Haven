@@ -62,7 +62,7 @@ p {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 .back:hover {
     background-color: #d32f2f;
