@@ -35,7 +35,15 @@ label {
     display: block;
 }
 
-input, textarea {
+input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
     width: 95%;
     padding: 10px;
     margin-bottom: 15px;
