@@ -3,7 +3,8 @@ color adjustments           -       x
 contact.css                 -       x
 donate.css border fix       -       x
 footerNav name change       -       x              
-footer Icons funk.          - 
+footer Icons funk.          -       x
+about us rework             -       x
 
 
 
