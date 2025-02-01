@@ -5,6 +5,11 @@ body {
     padding: 0;
     background-color: #d4d4d4;
     color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 .container {
@@ -31,6 +36,22 @@ p {
     font-size: 32px;
     margin-top: -20px;
     margin-bottom: 25px;
+}
+
+.privacy-policy {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2898a7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: all 0.3s ease;
+}
+.privacy-policy:hover {
+    background-color: #216788;
+    transform: scale(1.05);
 }
 
 .back {
