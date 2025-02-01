@@ -41,6 +41,8 @@ input, textarea {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    resize: none;
+    overflow: hidden;
 }
 
 .submit {

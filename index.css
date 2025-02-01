@@ -84,7 +84,7 @@ nav {
 }
 
 .scroll-top {
-    color:	#032f3c;
+    color:	#202020;
     text-decoration: none;
     position: absolute;
     z-index: 1001;
@@ -96,8 +96,9 @@ nav {
     transition: 0.5s
 }
 .scroll-top:hover {
-    color: cornflowerblue;
+    color: #032f3c;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 
