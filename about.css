@@ -32,7 +32,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.about-container {
+.container {
     background-color: #FAF9F6;
     position: absolute;
     top: calc(100vw * 0.25);;
@@ -58,7 +58,7 @@ body {
 
 .line {
     font-weight: 1000;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .button {
