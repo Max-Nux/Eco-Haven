@@ -278,8 +278,8 @@ footer {
 
 .footerNav ul {
     display: flex;
-    justify-content: center;
-    list-style-type: none;
+    justify-content: center; /*centers horizontal*/
+    list-style-type: none;   /*Keine Aufzählungspunkte*/
 }
 
 .footerNav ul li a {
