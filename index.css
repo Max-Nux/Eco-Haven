@@ -297,12 +297,13 @@ footer {
 .socialIcons a:hover {
     background-color: #111;
     transition: 0.5s;
+    transform: translateY(-3px);
 }
 
 .socialIcons a i {
     font-size: 2em;
     color: black;
-    opacity: 0,9;
+    opacity: 0.9;
     transition: 0.5s;
 }
 .socialIcons a:hover i {
