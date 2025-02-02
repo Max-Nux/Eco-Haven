@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const allowButton = document.querySelector(".cookie-consent-allow");
     const denyButton = document.querySelector(".cookie-consent-deny");
 
-    //if (localStorage.getItem("cookieConsent") !== null) {
-    //    consentBanner.style.display = "none";
-    //}
+    if (localStorage.getItem("cookieConsent") !== null) {
+        consentBanner.style.display = "none";
+    }
 
     allowButton.addEventListener("click", function () {
         localStorage.setItem("cookieConsent", "true");
