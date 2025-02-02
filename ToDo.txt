@@ -13,5 +13,8 @@ about us rework             -       x
 
 
 Merken:
+
+    VORHER IMMER display: flex
+
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
