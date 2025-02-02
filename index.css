@@ -191,9 +191,9 @@ html, body {
 /*Modularer Aufbau*/
 
 .description {
-    height: 300px;
-    padding: 30px 100px;
-    display: flex;          /*Ganzen Screen nutzen*/
+    height: 300px;          /*Höhe des Bereiches festlegen*/
+    padding: 30px 100px;    /*Überbreite hinzufügen*/
+    display: flex;          /*Ganze Screen breite nutzen*/
     gap: 50px;              /*Abstand zwischen Box und img*/
 }
 
