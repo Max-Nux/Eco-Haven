@@ -73,7 +73,7 @@ body {
     font-size: 27px;
     font-weight: 400;
     text-decoration: none;  
-    transition: ease 0.5s;
+    transition: 0.5s ease;
 }
 .button:hover {
     transform: scale(1.1);
@@ -89,7 +89,7 @@ body {
     mix-blend-mode: add ;
     height: calc(100vw * 0.2);
     width: calc(100vw * 0.2);
-    transition: .5s;
+    transition: 0.5s ease;
 }
 .logo:hover {
     transform: scale(1.1);

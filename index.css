@@ -34,7 +34,7 @@ html, body {
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-.acent {
+.accent {
     color: #10898d;
 }
 
@@ -63,42 +63,63 @@ html, body {
     background: #fff;
     padding: 20px;
     max-width: 500px;
+    border-radius: 20px;
+    background-color: #B4B4B4;
 }
 
-.cookie-consent-selection {
-    text-align: right;
+.cookie-consent-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.simple-cookie-consent button {
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 0 0 10px;
-    background: none;
-    font-size: 1.1em;
+.cookie-consent-button-container div {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
 }
 
-.simple-cookie-consent button.cookie-consent-allow {
-    background-color: #04aa6d;
+.cookie-consent-allow {
+    background-color: #2898a7;
     color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s ease;
 }
-.simple-cookie-consent button.cookie-consent-deny {
+
+.cookie-consent-allow:hover {
+    background-color: #216788;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cookie-consent-deny {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 1em;
     padding: 5px 0;
-    font-size: 0.9em;
+    cursor: pointer;
     opacity: 0.8;
+    transition: 0.5s ease;
 }
 
-.simple-cookie-consent button.cookie-consent-allow:focus, button.cookie-consent-allow:hover {
-    background-color: #059862;
-    cursor: pointer;
-}
-.simple-cookie-consent button.cookie-consent-deny:focus, button.cookie-consent-deny:hover {
+.cookie-consent-deny:hover {
     opacity: 1;
-    cursor: pointer;
+    text-decoration: underline;
 }
 
-.simple-cookie-consent hr {
-    margin: 15px 0;
+.cookie-consent-privacy-policy {	
+    color: #000000;
+    text-decoration: none;
+    transition: 0.5s ease;
 }
+.cookie-consent-privacy-policy:hover {
+    text-decoration: underline;
+}
+
 
 
 

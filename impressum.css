@@ -47,7 +47,7 @@ p {
     border-radius: 5px;
     font-weight: bold;
     margin-right: 30px;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 .privacy-policy:hover {
     background-color: #216788;
@@ -62,7 +62,7 @@ p {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: all 0.5s ease;
+    transition: 0.5s ease;
 }
 .back:hover {
     background-color: #d32f2f;
