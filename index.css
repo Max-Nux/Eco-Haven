@@ -61,17 +61,23 @@ html, body {
     right: 20px;
     margin: -100px auto 0;
     background: #fff;
-    padding: 20px;
+    padding: 10px 30px 30px 30px;
     max-width: 500px;
     border-radius: 20px;
     background-color: #B4B4B4;
+}
+
+.cookie-consent-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center
 }
 
 .cookie-consent-button-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .cookie-consent-button-container div {
