@@ -52,10 +52,14 @@
 
     <nav class="nav">
       <div class="nav-container">
-        <a href="about.html" class="menu-link">Über uns</a>
-        <a href="donate.html" class="menu-link">Spenden</a>
-        <a href="contact.html" class="menu-link">Kontakt</a>
-        <a href="impressum.html" class="menu-link">Impressum</a>
+        <div onclick="toggleSidebar()" class="menu">&#9776;</div>
+        <div class="sidebar" id="sidebar">
+          <span class="close-button" onclick="toggleSidebar()">&times;</span>
+          <a href="about.html" class="menu-link">Über uns</a>
+          <a href="donate.html" class="menu-link">Spenden</a>
+          <a href="contact.html" class="menu-link">Kontakt</a>
+          <a href="impressum.html" class="menu-link">Impressum</a>
+        </div>
       </div>
       <div class="scroll-top" onclick="scrollToTop()">EcoHaven Official</div>
     </nav>

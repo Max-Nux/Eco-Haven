@@ -31,3 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Nur notwendige Cookies erlaubt");
     }
 });
+
+function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("show-sidebar");
+}
