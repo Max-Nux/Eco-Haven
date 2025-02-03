@@ -34,6 +34,18 @@ Da es sich um ein reines Vanilla HTML, CSS und JavaScript Projekt handelt, sind 
 }
 ```
 
+### Glasmorphism Effekt
+
+```css
+.container {
+    background: rgba(233, 233, 233, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(233, 233, 233, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+```
+
 ## Todo
 
 - [x] new acent color
