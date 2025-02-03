@@ -34,7 +34,7 @@ Da es sich um ein reines Vanilla HTML, CSS und JavaScript Projekt handelt, sind 
 }
 ```
 
-## Todo:
+## Todo
 
 - [x] new acent color
 - [x] color adjustments
