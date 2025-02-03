@@ -134,7 +134,7 @@ html, body {
 .menu {
     cursor: pointer;
     color:	#202020;
-        transition: 0.5s
+    transition: 0.5s
 }
 .menu:hover {
     color: #032f3c;
@@ -147,33 +147,39 @@ html, body {
     top: 0;
     right: -250px;
     width: 250px;
-    height: 100%;
-    background: #444;
+    height: 93%;
+    border-radius: 25px;
+    margin: 12px;
+
+    /*Transparent*/
+    background: rgba(233, 233, 233, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(233, 233, 233, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    
     transition: right 0.3s ease;
     padding-top: 60px;
 }
   
-.sidebar a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-}
-.sidebar a:hover {
-    background: #555;
-}
-
 .show-sidebar {
     right: 0;
 }
 
 .close-button {
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 20px;
-    cursor: pointer;
+    top: 5px;
+    right: 20px;
     color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.close-button:hover {
+    color: rgba(255, 62, 62, 0.8);
+    transform: scale(1.2);
 }
 
 .menu-link {
@@ -181,12 +187,15 @@ html, body {
     text-decoration: none;
     font-weight: 650;
     margin-left: 40px;
-    font-size: 25px;
-    transition: 0.6s
+    margin-top: 20px;
+    font-size: 26px;
+    transition: ease 0.5s;
+
 }
 .menu-link:hover {
     color: #032f3c;
-    transform: scale(1.15);
+    font-size: 30px;
+
 }
 
 .nav-container {
