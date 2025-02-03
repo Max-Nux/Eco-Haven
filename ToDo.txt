@@ -5,6 +5,7 @@ donate.css border fix       -       x
 footerNav name change       -       x              
 footer Icons funk.          -       x
 about us rework             -       x
+confetti on donate          -       
 
 
 
