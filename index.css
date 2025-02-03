@@ -241,14 +241,14 @@ html, body {
     gap: 50px;              /*Abstand zwischen Box und img*/
 }
 
-.scd-head {
+.module-headline {
     text-align: center;
     font-size: 40px;
     cursor: default;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
     transition: ease 0.5s;
 }
-.scd-head:hover {
+.module-headline:hover {
     transform: scale(1.1);
 }
 
@@ -292,23 +292,13 @@ html, body {
     transform: scale(1.03);
 }
 
-.img1 {
+.img {
     border-radius: 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     cursor:default;
     transition: ease 0.5s;
 }
-.img1:hover {
-    transform: scale(1.05);
-}
-
-.img2 {
-    border-radius: 30px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    cursor:default;
-    transition: ease 0.5s;
-}
-.img2:hover {
+.img:hover {
     transform: scale(1.05);
 }
 
