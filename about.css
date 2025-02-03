@@ -23,7 +23,7 @@ body {
     max-width: 1000px;
     max-height: 570px;
     padding-left: 60px;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-bottom: 30px;
     border-radius: 25px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
@@ -68,16 +68,30 @@ body {
     cursor: default;
 }
 
-.contact {
+.line {
+    margin: 50px 0;
+    width: 970px;
+}
+
+.button-container {
     margin-top: 30px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 60px;
+    justify-content: center;
+    gap: 140px;
 }
 
-.button {
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact {
     display: inline-block;
     padding: 10px 30px;
     background-color: #2898a7;
@@ -89,7 +103,7 @@ body {
     transition: 0.5s ease;
 }
 
-.button:hover {
+.contact:hover {
     background-color: #216788;
     transform: scale(1.05);
 }
