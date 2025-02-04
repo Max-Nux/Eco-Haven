@@ -31,7 +31,7 @@ h3, li, p {
     padding: 30px 70px;
     border-radius: 25px;
     font-size: 22px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
     margin-top: 200px;
     margin-bottom: 200px;
 }
