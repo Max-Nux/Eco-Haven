@@ -38,15 +38,17 @@ function toggleSidebar() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const user = {
-        isLoggedIn: false, // Hier echte überprüfung einfügen
-        username: "Username",
-        profileImage: "profile_picures/profile.jpg"
+    // Überprüfen, ob der Benutzer eingeloggt ist, indem die Daten aus localStorage gelesen werden
+    const user = JSON.parse(localStorage.getItem("user")) || {
+        isLoggedIn: false,
+        username: "",
+        profileImage: "profile_picures/default.jpg"
     };
 
     const accountMenu = document.getElementById("account-menu");
 
     if (user.isLoggedIn) {
+        // Wenn der Benutzer eingeloggt ist, zeige das Profil-Menü an
         accountMenu.innerHTML = `
             <div class="menu-account">
                 <a href="settings.html" class="menu-account-link">
@@ -59,18 +61,24 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `;
 
+        // Logout-Button EventListener hinzufügen
         document.getElementById("logout").addEventListener("click", function () {
-            // Hier Logout-Logik einfügen
+            // Logout-Logik: Benutzerdaten aus localStorage entfernen
+            localStorage.removeItem("user");
+
+            // Weiterleitung zur Startseite oder Login-Seite
+            window.location.href = "login.html"; // Weiterleitung zur Login-Seite
         });
 
     } else {
-      accountMenu.innerHTML = `
-        <div class="menu-account">
-            <a href="login.html" class="menu-account-link">
-                <img src="profile_picures/default.jpg" class="profile-img" />
-                <span class="username-text">Anmelden</span>
-            </a>
-        </div>
-      `;
+        // Wenn der Benutzer nicht eingeloggt ist, zeige den Anmelden-Link an
+        accountMenu.innerHTML = `
+            <div class="menu-account">
+                <a href="login.html" class="menu-account-link">
+                    <img src="profile_picures/default.jpg" class="profile-img" />
+                    <span class="username-text">Anmelden</span>
+                </a>
+            </div>
+        `;
     }
 });
