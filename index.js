@@ -36,3 +36,37 @@ function toggleSidebar() {
     var sidebar = document.getElementById("sidebar");
     sidebar.classList.toggle("show-sidebar");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const user = {
+      isLoggedIn: true,
+      username: "Username",
+      profileImage: "profile_pictures/profile.jpg"
+    };
+
+    const accountMenu = document.getElementById("account-menu");
+
+    if (user.isLoggedIn) {
+      accountMenu.innerHTML = `
+        <a href="settings.html" class="menu-link">
+          <img src="${user.profileImage}" class="profile-img" />
+          <span>${user.username}</span>
+        </a>
+        <a href="#" id="logout" class="logout-icon" title="Ausloggen">
+          <i class="fa-solid fa-sign-out-alt"></i>
+        </a>
+      `;
+
+      document.getElementById("logout").addEventListener("click", function () {
+        alert("Ausgeloggt!");
+        // Hier Logout-Logik einfügen
+      });
+    } else {
+      accountMenu.innerHTML = `
+        <a href="login.html" class="menu-link">
+          <img src="profile_picures/default.jpg" class="profile-img" />
+          <span>Einloggen</span>
+        </a>
+      `;
+    }
+  });
