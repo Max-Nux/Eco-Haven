@@ -145,8 +145,8 @@ html, body {
 .sidebar {
     position: fixed;
     top: 10px;
-    right: -320px;
-    width: 300px;
+    right: -450px;
+    width: 430px;
     height: 93%;
     background: #444;
     padding-top: 40px;
@@ -166,7 +166,7 @@ html, body {
     right: 10px;
 }
   
-.sidebar a {
+.menu-link {
     display: flex;
     align-items: center;
     display: block;
@@ -174,13 +174,13 @@ html, body {
     text-decoration: none;
     font-weight: 650;
     font-size: 26px;
-    margin-left: 40px;
+    margin-left: 60px;
     margin-bottom: 15px;
     transition: 0.5s ease;
 }
-.sidebar a:hover {
+.menu-link:hover {
     color: #10898d;
-    transform: scale(1.07);
+    transform: scale(1.07) translateX(30px);
 }
 
 .fa-solid {
@@ -191,7 +191,7 @@ html, body {
 }
 
 .menu-description {
-    margin-left: 20px;
+    margin-left: 40px;
     font-size: 23px;
     font-weight: 700;
     color: #00b7bd;
@@ -200,24 +200,58 @@ html, body {
 }
 
 .menu-line {
-    margin: 30px 20px 0 20px;
+    margin: 30px 30px 0 30px;
 }
 
 .account-line {
-    margin: 550px 20px 30px 20px;
+    margin: 500px 30px 30px 30px;
+}
+
+.menu-account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.menu-account-link {
+    display: flex;
+    align-items: center;
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: 650;
+    font-size: 32px;
+    transition: 0.5s ease;
+}
+
+.menu-account-link:hover {
+    color: #10898d;
 }
 
 .profile-img {
-    width: 30px;
-    height: 30px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
-    margin-right: 8px;
+    margin-right: 30px;
 }
 
-.logout-icon {
-    margin-left: 10px;
-    color: red;
+.username-text {
+    display: flex;
+    align-items: center;
+}
+
+.logout-link {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
     cursor: pointer;
+    margin-right: 70px;
+    transition: 0.5s ease;
+}
+.logout-link:hover {
+    color: rgba(255, 62, 62, 0.8);
+    transform: scale(1.1);
 }
 
 .close-button {
@@ -225,7 +259,7 @@ html, body {
     top: 0;
     right: 20px;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     cursor: pointer;
     z-index: 10000;

@@ -39,34 +39,38 @@ function toggleSidebar() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const user = {
-      isLoggedIn: true,
-      username: "Username",
-      profileImage: "profile_pictures/profile.jpg"
+        isLoggedIn: false, // Hier echte überprüfung einfügen
+        username: "Username",
+        profileImage: "profile_picures/profile.jpg"
     };
 
     const accountMenu = document.getElementById("account-menu");
 
     if (user.isLoggedIn) {
-      accountMenu.innerHTML = `
-        <a href="settings.html" class="menu-link">
-          <img src="${user.profileImage}" class="profile-img" />
-          <span>${user.username}</span>
-        </a>
-        <a href="#" id="logout" class="logout-icon" title="Ausloggen">
-          <i class="fa-solid fa-sign-out-alt"></i>
-        </a>
+        accountMenu.innerHTML = `
+            <div class="menu-account">
+                <a href="settings.html" class="menu-account-link">
+                    <img src="${user.profileImage}" class="profile-img" />
+                    <span class="username-text">${user.username}</span>
+                </a>
+                <a href="#" id="logout" class="logout-link">
+                    <i class="fa-solid fa-sign-out-alt"></i>
+                </a>
+            </div>
       `;
 
       document.getElementById("logout").addEventListener("click", function () {
-        alert("Ausgeloggt!");
         // Hier Logout-Logik einfügen
       });
+
     } else {
       accountMenu.innerHTML = `
-        <a href="login.html" class="menu-link">
-          <img src="profile_picures/default.jpg" class="profile-img" />
-          <span>Einloggen</span>
-        </a>
+        <div class="menu-account">
+            <a href="login.html" class="menu-account-link">
+                <img src="profile_picures/default.jpg" class="profile-img" />
+                <span class="username-text">Anmelden</span>
+            </a>
+        </div>
       `;
     }
-  });
+});
