@@ -5,7 +5,7 @@ body {
     font-weight: weight;
     font-style: normal;
     font-variation-settings: "wdth" width;
-    background-color: #F4F9FF;
+    background-color: #e1edfb;
 }
 
 html, body {
@@ -150,7 +150,7 @@ html, body {
     width: 250px;
     height: 93%;
     background: #444;
-    padding-top: 60px;
+    padding-top: 50px;
     border-radius: 20px;
 
     /*Transparent*/
@@ -172,13 +172,25 @@ html, body {
     text-decoration: none;
     font-weight: 650;
     font-size: 26px;
-    margin-left: 40px;
+    margin-left: 50px;
     margin-bottom: 15px;
     transition: 0.5s ease;
 }
 .sidebar a:hover {
     color: #10898d;
     transform: scale(1.07);
+}
+
+.menu-description {
+    margin-left: 20px;
+    font-size: 23px;
+    font-weight: 700;
+    color: #00b7bd;
+    margin-top: 30px;
+}
+
+.menu-line {
+    margin: 30px 20px 0 20px;
 }
 
 .close-button {
