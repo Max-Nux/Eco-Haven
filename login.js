@@ -35,3 +35,57 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Wenn das Registrierungsformular abgeschickt wird
+    document.getElementById("register-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Verhindern, dass das Formular gesendet wird
+
+        // Benutzereingaben holen
+        const firstName = document.getElementById("fname").value;
+        const lastName = document.getElementById("lname").value;
+        const email = document.getElementById("mail").value;
+        const password = document.getElementById("pwd").value;
+
+        // Überprüfen, ob der Benutzer bereits existiert
+        const users = JSON.parse(localStorage.getItem("users")) || [];
+
+        // Überprüfen, ob die E-Mail bereits registriert ist
+        const userExists = users.some(user => user.email === email);
+        
+        if (userExists) {
+            alert("Diese E-Mail ist bereits registriert.");
+            return;
+        }
+
+        // Neuen Benutzer erstellen
+        const newUser = {
+            firstName,
+            lastName,
+            email,
+            password, // Hinweis: In einer echten Anwendung sollte das Passwort verschlüsselt gespeichert werden
+            profileImage: "profile_picures/default.jpg" // Standardbild
+        };
+
+        // Benutzer zum localStorage hinzufügen
+        users.push(newUser);
+        localStorage.setItem("users", JSON.stringify(users));
+
+        // Weiterleitung zur Login-Seite oder zur Startseite
+        window.location.href = "login.html"; // Weiterleitung zur Login-Seite
+    });
+
+    // Funktion zum Umschalten zwischen Login und Registrierung
+    window.toggleForms = function () {
+        const loginForm = document.getElementById("login");
+        const registerForm = document.getElementById("register");
+        
+        if (loginForm.classList.contains("hidden")) {
+            loginForm.classList.remove("hidden");
+            registerForm.classList.add("hidden");
+        } else {
+            loginForm.classList.add("hidden");
+            registerForm.classList.remove("hidden");
+        }
+    };
+});
