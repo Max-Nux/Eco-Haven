@@ -57,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <i class="fa-solid fa-sign-out-alt"></i>
                 </a>
             </div>
-      `;
+        `;
 
-      document.getElementById("logout").addEventListener("click", function () {
-        // Hier Logout-Logik einfügen
-      });
+        document.getElementById("logout").addEventListener("click", function () {
+            // Hier Logout-Logik einfügen
+        });
 
     } else {
       accountMenu.innerHTML = `
