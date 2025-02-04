@@ -4,8 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anmelden</title>
+
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
-    <a href="index.html">Back</a>
+    <div class="container">
+      <h1 class="title">Registrieren</h1>
+
+      <form>
+        <div class="fname">
+          <label for="fname">Vorname</label>
+          <input
+            class="fname"
+            id="fname"
+            type="text"
+            name="fname"
+            placeholder="Max"
+            required
+          />
+        </div>
+
+        <div class="lname">
+          <label for="lname">Nachname</label>
+          <input
+            class="lname"
+            id="lname"
+            type="text"
+            name="lname"
+            placeholder="Musterman"
+            required
+          />
+        </div>
+
+        <div class="mail">
+          <label for="mail">Email</label>
+          <input
+            class="mail"
+            id="mail"
+            type="email"
+            name="mail"
+            placeholder="max.muster@example.com"
+            required
+          />
+        </div>
+
+        <div class="pwd">
+          <label for="pwd">Passwort</label>
+          <input
+            class="pwd"
+            id="pwd"
+            type="password"
+            name="pwd"
+            placeholder="Dein Passwort"
+            required
+          />
+        </div>
+
+        <input class="submit" type="submit" value="Registrieren" />
+
+        <a class="back" href="index.html">Zurück zur Startseite</a>
+      </form>
+    </div>
   </body>
 </html>
