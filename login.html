@@ -6,9 +6,10 @@
     <title>Anmelden</title>
 
     <link rel="stylesheet" href="login.css" />
+    <script src="login.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div class="register hidden" id="register">
       <h1 class="title">Registrieren</h1>
 
       <form>
@@ -60,7 +61,53 @@
           />
         </div>
 
+        <p class="changemeth">
+          Hast du schon ein Konto?
+          <a class="change-btn" href="#" onclick="toggleForms()">Anmelden</a>
+        </p>
+
         <input class="submit" type="submit" value="Registrieren" />
+
+        <a class="back" href="index.html">Zurück zur Startseite</a>
+      </form>
+    </div>
+
+    <div class="login" id="login">
+      <h1 class="title">Login</h1>
+
+      <form>
+        <div class="mail">
+          <label for="mail">Email</label>
+          <input
+            class="mail"
+            id="mail"
+            type="email"
+            name="mail"
+            placeholder="max.muster@example.com"
+            required
+          />
+        </div>
+
+        <div class="pwd">
+          <label for="pwd">Passwort</label>
+          <input
+            class="pwd"
+            id="pwd"
+            type="password"
+            name="pwd"
+            placeholder="Dein Passwort"
+            required
+          />
+        </div>
+
+        <p class="changemeth">
+          Noch kein Konto?
+          <a class="change-btn" href="#" onclick="toggleForms()"
+            >Registrieren</a
+          >
+        </p>
+
+        <input class="submit" type="submit" value="Anmelden" />
 
         <a class="back" href="index.html">Zurück zur Startseite</a>
       </form>

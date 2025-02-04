@@ -15,7 +15,24 @@ body {
     height: 90vh;
 }
 
-.container {
+.hidden { display: none; }
+
+.register {
+    width: 600px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    
+    /*Transparent*/
+    background: rgba(233, 233, 233, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(233, 233, 233, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.login {
     width: 600px;
     max-width: 600px;
     margin: 50px auto;
@@ -62,6 +79,23 @@ input:invalid {
 }
 input:hover {
     transform: scale(1.03)
+}
+
+.changemeth {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; 
+    cursor: default;
+}
+
+.change-btn {
+    color: #0f8dc4;
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+.change-btn:hover {
+    color: #32b0e6;
+    text-decoration: underline;
 }
 
 .submit {
