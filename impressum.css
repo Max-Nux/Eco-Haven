@@ -27,10 +27,12 @@ h1 {
     margin-bottom: 30px;
     color: #222;
     text-align: center;
+    cursor: default;
 }
 
 p {
     margin: 10px 0;
+    cursor: default;
 }
 
 .line {
@@ -45,10 +47,10 @@ p {
     background-color: #2898a7;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
     margin-right: 30px;
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 .privacy-policy:hover {
     background-color: #216788;
@@ -61,7 +63,7 @@ p {
     background-color: #f44336;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
     transition: 0.5s ease;
 }

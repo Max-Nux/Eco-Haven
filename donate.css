@@ -34,6 +34,7 @@ h1 {
     font-size: 36px;
     margin-bottom: 30px;
     color: #222;
+    cursor: default;
 }
   
 form {
@@ -52,7 +53,7 @@ input {
     padding: 10px;
     margin-bottom: 15px;
     border: 3px solid #878787;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
     transition: ease 0.5s;
 }
@@ -68,7 +69,7 @@ select {
     padding: 10px;
     margin-bottom: 15px;
     border: 3px solid #878787;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
     transition: ease 0.5s;
 }
@@ -87,7 +88,7 @@ select:hover {
     margin-top: 30px;
     margin-bottom: 25px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 8px;
     transition: 0.5s ease;
 }
 .submit:hover {
@@ -106,7 +107,7 @@ select:hover {
     font-weight: bold;
     margin-bottom: 20px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    border-radius: 8px;
     transition: 0.5s ease;
 }
 .back:hover {
