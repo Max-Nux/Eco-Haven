@@ -56,9 +56,11 @@ Da es sich um ein reines Vanilla HTML, CSS und JavaScript Projekt handelt, sind 
 - [x] footer Icons funk
 - [x] about us rework
 - [x] confetti on donate
-- [ ] Todo 1
-- [ ] Todo 2
-- [ ] Todo 3
+- [ ] Toggle password
+- [ ] profile picture
+- [ ] save name, last name and username in database
+- [ ] username in login page
+- [ ] 
 
 ## Mitwirkende
 
