@@ -15,7 +15,9 @@ body {
     height: 90vh;
 }
 
-.hidden { display: none; }
+.hidden { 
+    display: none; 
+}
 
 .register {
     width: 600px;
@@ -81,19 +83,18 @@ input:hover {
     transform: scale(1.03)
 }
 
-.changemeth {
+.change-method {
     font-weight: bold;
-    margin-bottom: 5px;
     display: block; 
     cursor: default;
 }
 
-.change-btn {
+.change-button {
     color: #0f8dc4;
     text-decoration: none;
     transition: ease 0.3s;
 }
-.change-btn:hover {
+.change-button:hover {
     color: #32b0e6;
     text-decoration: underline;
 }
