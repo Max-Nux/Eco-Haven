@@ -6,13 +6,16 @@ body {
     background-color: #d4d4d4;
     color: #333;
 
+    background-image: url("images/iceberg-background.jpg");
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 .main-container {
     max-height: 570px;
-    margin-top: 300px;
     gap: 40px;
     display: flex;
     align-items: center;
@@ -27,6 +30,13 @@ body {
     padding-bottom: 30px;
     border-radius: 15px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+    /*Transparent*/
+    background: rgba(233, 233, 233, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(233, 233, 233, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .image-container {
@@ -37,6 +47,12 @@ body {
     border-radius: 15px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 
+    /*Transparent*/
+    background: rgba(233, 233, 233, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(233, 233, 233, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
 
 .image {
