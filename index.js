@@ -38,7 +38,6 @@ function toggleSidebar() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Überprüfen, ob der Benutzer eingeloggt ist, indem die Daten aus localStorage gelesen werden
     const user = JSON.parse(localStorage.getItem("user")) || {
         isLoggedIn: false,
         username: "",
@@ -48,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const accountMenu = document.getElementById("account-menu");
 
     if (user.isLoggedIn) {
-        // Wenn der Benutzer eingeloggt ist, zeige das Profil-Menü an
         accountMenu.innerHTML = `
             <div class="menu-account">
                 <a href="settings.html" class="menu-account-link">
@@ -61,17 +59,12 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         `;
 
-        // Logout-Button EventListener hinzufügen
         document.getElementById("logout").addEventListener("click", function () {
-            // Logout-Logik: Benutzerdaten aus localStorage entfernen
             localStorage.removeItem("user");
-
-            // Weiterleitung zur Startseite oder Login-Seite
-            window.location.href = "login.html"; // Weiterleitung zur Login-Seite
+            window.location.href = "login.html";
         });
 
     } else {
-        // Wenn der Benutzer nicht eingeloggt ist, zeige den Anmelden-Link an
         accountMenu.innerHTML = `
             <div class="menu-account">
                 <a href="login.html" class="menu-account-link">
