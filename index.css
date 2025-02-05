@@ -399,11 +399,17 @@ footer {
 }
 
 .socialIcons a {
+    width: 35px;
+    height: 35px;
     text-decoration: none;
     padding:  10px;
     background-color: white;
     margin: 10px;
     border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .socialIcons a:hover {
     background-color: #111;
@@ -412,6 +418,7 @@ footer {
 }
 
 .socialIcons a i {
+
     font-size: 2em;
     color: black;
     opacity: 0.9;
