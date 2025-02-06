@@ -2,6 +2,11 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.toggle("toggle-sidebar");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const consentBanner = document.getElementById("simple-cookie-consent");
     const allowButton = document.querySelector(".cookie-consent-allow");
@@ -31,11 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Nur notwendige Cookies erlaubt");
     }
 });
-
-function toggleSidebar() {
-    var sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("show-sidebar");
-}
 
 document.addEventListener("DOMContentLoaded", function () {
     const user = JSON.parse(localStorage.getItem("user")) || {

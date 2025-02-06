@@ -23,16 +23,9 @@
           </p>
         </div>
         <div class="cookie-consent-button-container">
-          <a
-            href="privacy_policy.html"
-            class="cookie-consent-privacy-policy"
-            target="_blank"
-            >Datenschutzerklärung</a
-          >
+          <a href="privacy_policy.html" class="cookie-consent-privacy-policy" target="_blank">Datenschutzerklärung</a>
           <div>
-            <button value="false" class="cookie-consent-deny">
-              Nur Essenzielle
-            </button>
+            <button value="false" class="cookie-consent-deny">Nur Essenzielle</button>
             <button value="true" class="cookie-consent-allow">Erlauben</button>
           </div>
         </div>
@@ -41,11 +34,16 @@
 
     <img class="header-image" src="/images/iceberg-background.jpg" alt="" />
 
-    <nav class="nav">
-      <div class="nav-container">
-        <div onclick="toggleSidebar()" class="menu">&#9776;</div>
+    <h1 class="headline">
+      Lorem <span class="headline-accent">ipsum dolor sit</span> amet consectetur
+      adipisicing elit.
+    </h1>
+
+    <nav class="navigator">
+      <div class="navigator-container">
+        <div onclick="toggleSidebar()" class="open-sidebar">&#9776;</div>
         <div class="sidebar" id="sidebar">
-          <span class="close-button" onclick="toggleSidebar()">&times;</span>
+          <span class="sidebar-close-button" onclick="toggleSidebar()">&times;</span>
           <p class="menu-description">Allgemeines</p>
           <a href="about.html" class="menu-link"><i class="fa-solid fa-book"></i>Über uns</a>
           <hr class="menu-line" />
@@ -61,19 +59,22 @@
           <div id="account-menu"></div>
         </div>
       </div>
-      <div class="scroll-top" onclick="scrollToTop()">EcoHaven Official</div>
+      <div class="navigator-scroll-top-icon" onclick="scrollToTop()">EcoHaven Official</div>
     </nav>
 
-    <h1 class="headline">
-      Lorem <span class="accent">ipsum dolor sit</span> amet consectetur
-      adipisicing elit.
-    </h1>
-    
-    <div class="infPic-container">
-      <div class="information1-container">
+    <div class="information-slider-container">
+      <div class="slider-images-container">
+        <img class="slider-image" src="images/sildeshow/img1.jpg" alt="">
+        <img class="slider-image" src="images/sildeshow/img2.jpg" alt="">
+        <img class="slider-image" src="images/sildeshow/img4.jpg" alt="">
+        <img class="slider-image" src="images/sildeshow/img5.jpg" alt="">
+        <img class="slider-image slider-image-default" src="images/sildeshow/img3.jpg" alt="">
+      </div>  
+
+      <div class="information-container">
         <h2 class="module-headline">Lorem ipsum dolor sit.</h2>
-        <div class="description">
-          <div class="box">
+        <div class="description-container">
+          <div class="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Quisexercitationem voluptatem quam nam itaque quasi placeat in iure
             vitaererum, velit, at eaque ipsa quia! Ab provident eaque modi
@@ -81,13 +82,13 @@
             rerum velpraesentium cumque ullam ipsam ex saepe culpa iusto atque enim
             quos remiure.
           </div>
-          <img class="img" src="images/iceberg.jpg" alt="" />
+          <img class="image" src="images/iceberg.jpg" alt="" />
         </div>
 
         <h2 class="module-headline">Lorem ipsum dolor sit.</h2>
-        <div class="description">
-          <img class="img" src="images/house-on-hill.jpg" alt="" />
-          <div class="box">
+        <div class="description-container">
+          <img class="image" src="images/house-on-hill.jpg" alt="" />
+          <div class="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Quisexercitationem voluptatem quam nam itaque quasi placeat in iure
             vitaererum, velit, at eaque ipsa quia! Ab provident eaque modi
@@ -97,17 +98,11 @@
           </div>
         </div>
       </div>
-      <div class="pic1-container">
-          <img class="logoimgincontainer" src="images/sildeshow/img1.jpg" alt="">
-          <img class="logoimgincontainer" src="images/sildeshow/img2.jpg" alt="">
-          <img class="logoimgincontainer standartpicslider" src="images/sildeshow/img3.jpg" alt="">
-          <img class="logoimgincontainer" src="images/sildeshow/img4.jpg" alt="">
-          <img class="logoimgincontainer" src="images/sildeshow/img5.jpg" alt="">
-      </div>
     </div>
+
     <h2 class="module-headline">UNICEF Hauptsitz Deutschland</h2>
-    <div class="description">
-      <div class="box">
+    <div class="description-container">
+      <div class="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Quisexercitationem voluptatem quam nam itaque quasi placeat in iure
         vitaererum, velit, at eaque ipsa quia! Ab provident eaque modi
@@ -126,7 +121,7 @@
     </div>
 
     <h2 class="module-headline">Video</h2>
-    <div class="description">
+    <div class="description-container">
       <div class="video-container">
         <iframe
           class="youtube"
@@ -136,7 +131,7 @@
           allowfullscreen
         ></iframe>
       </div>
-      <div class="box">
+      <div class="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Quisexercitationem voluptatem quam nam itaque quasi placeat in iure
         vitaererum, velit, at eaque ipsa quia! Ab provident eaque modi
@@ -147,15 +142,15 @@
     </div>
 
     <footer>
-      <div class="footerContainer">
-        <div class="socialIcons">
+      <div class="footer-container">
+        <div class="footer-social-icons">
           <a href="https://www.facebook.com/unicef" target="_blank"><i class="fa-brands fa-facebook"></i></a>
           <a href="https://www.instagram.com/unicef/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://x.com/UNICEF" target="_blank"><i class="fa-brands fa-twitter"></i></a>
           <a href="https://www.tiktok.com/@unicef" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
           <a href="https://www.youtube.com/@UNICEF" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
-        <div class="footerNav">
+        <div class="footer-navigator">
           <ul>
             <li><a href="about.html">Über uns</a></li>
             <li><a href="donate.html">Spenden</a></li>
@@ -166,12 +161,8 @@
           </ul>
         </div>
       </div>
-      <div class="footerBottom">
-        <p>
-          Copyright &copy 2025; Designed by
-          <br/>
-          <span class="designer">Max Nuxoll - Felix Wolters</span>
-        </p>
+      <div class="footer-credits">
+        <p>Copyright &copy 2025; Designed by<br/><span class="footer-credits-designer">Max Nuxoll - Felix Wolters</span></p>
       </div>
     </footer>
   </body>

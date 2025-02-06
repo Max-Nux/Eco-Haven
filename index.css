@@ -36,7 +36,7 @@ body {
     text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-.accent {
+.headline-accent {
     color: #10898d;
 }
 
@@ -133,14 +133,14 @@ body {
 
 
 /*Nav Bar*/
-.menu {
+.open-sidebar {
     cursor: pointer;
     color: #202020;
     font-weight: bold;
     transition: 0.5s ease;
 }
 
-.menu:hover {
+.open-sidebar:hover {
     color: #032f3c;
     transform: scale(1.2);
 }
@@ -166,7 +166,7 @@ body {
     transition: right 0.3s ease-in;
 }
 
-.show-sidebar {
+.toggle-sidebar {
     right: 10px;
 }
 
@@ -254,13 +254,12 @@ body {
     margin-right: 70px;
     transition: 0.5s ease;
 }
-
 .logout-link:hover {
     color: rgba(255, 62, 62, 0.8);
     transform: scale(1.1);
 }
 
-.close-button {
+.sidebar-close-button {
     position: absolute;
     top: 0;
     right: 20px;
@@ -271,13 +270,12 @@ body {
     z-index: 10000;
     transition: 0.5s ease;
 }
-
-.close-button:hover {
+.sidebar-close-button:hover {
     color: rgba(255, 62, 62, 0.8);
     transform: scale(1.3);
 }
 
-.nav-container {
+.navigator-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -285,7 +283,7 @@ body {
     font-size: 28px;
 }
 
-.nav {
+.navigator {
     background-color: #046169;
     padding: 15px;
     width: 100%;
@@ -296,12 +294,11 @@ body {
     box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.15);
     transition: 0.5s ease;
 }
-
-.nav:hover {
+.navigator:hover {
     background-color: #217b7e;
 }
 
-.scroll-top {
+.navigator-scroll-top-icon {
     color: #202020;
     text-decoration: none;
     position: absolute;
@@ -314,8 +311,7 @@ body {
     cursor: pointer;
     transition: 0.5s ease;
 }
-
-.scroll-top:hover {
+.navigator-scroll-top-icon:hover {
     color: #032f3c;
     transform: scale(1.07);
 }
@@ -324,7 +320,7 @@ body {
 
 /*Modularer Aufbau*/
 
-.description {
+.description-container {
     height: 300px;
     /*Höhe des Bereiches festlegen*/
     padding: 30px 100px;
@@ -342,27 +338,28 @@ body {
     cursor: default;
 }
 
-.infPic-container {
+.information-slider-container {
     display: flex;
     justify-content: center;
 }
 
-.information1-container {
+.information-container {
     width: 50%;
 
 }
 
-.pic1-container {
+.slider-images-container {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 50px;
+    padding-left: 60px;
+    padding-top: 100px;
 }
 
-.logoimgincontainer {
-    width: 125px;
-    height: 700px;
+.slider-image {
+    max-width: 125px;
+    height: 600px;
     object-fit: cover;
     margin: 10px;
     border-radius: 15px;
@@ -370,27 +367,33 @@ body {
     filter: grayscale(0.8);
     transition: ease 0.5s;
 }
-
-.logoimgincontainer:hover {
-    width: 50%;
-    transform: scale(1.07);
-    margin: 30px;
-    filter: grayscale(0);
-}
-
-.standartpicslider {
-    width: 50%;
+.slider-image:hover {
+    max-width: 600px;
     margin: 30px;
     transform: scale(1.07);
     filter: grayscale(0);
 }
 
-.pic1-container:hover .standartpicslider:not(:hover) {
-    width: 125px;
-    height: 700px;
-    transform: scale(1);
-    filter: grayscale(0.8);
+.slider-image:hover ~ .slider-image-default {
+    max-width: 125px;
+    height: 600px;
+    object-fit: cover;
     margin: 10px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    filter: grayscale(0.8);
+    transform: scale(1);
+    transition: ease 0.5s;
+}
+.slider-image-default {
+    max-width: 600px;
+    height: 600px;
+    margin: 30px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.07);
+    filter: grayscale(0);
 }
 
 .maps {
@@ -398,7 +401,6 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     transition: ease 0.5s;
 }
-
 .maps:hover {
     transform: scale(1.03);
 }
@@ -414,12 +416,11 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     transition: ease 0.5s;
 }
-
 .youtube:hover {
     transform: scale(1.03);
 }
 
-.box {
+.description {
     color: #ffffff;
     font-size: 24px;
     background-color: #7ea3bf;
@@ -431,19 +432,17 @@ body {
     cursor: default;
     transition: ease 0.5s;
 }
-
-.box:hover {
+.description:hover {
     transform: scale(1.03);
 }
 
-.img {
+.image {
     border-radius: 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: ease 0.5s;
 }
-
-.img:hover {
+.image:hover {
     transform: scale(1.05);
 }
 
@@ -451,22 +450,22 @@ body {
 
 /*footer*/
 
-.footerContainer {
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-
 footer {
     background-color: #111;
     margin-top: 50px;
 }
 
-.socialIcons {
+.footer-container {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.footer-social-icons {
     display: flex;
     justify-content: center;
 }
 
-.socialIcons a {
+.footer-social-icons a {
     width: 35px;
     height: 35px;
     text-decoration: none;
@@ -480,13 +479,13 @@ footer {
     align-items: center;
 }
 
-.socialIcons a:hover {
+.footer-social-icons a:hover {
     background-color: #111;
     transition: 0.5s;
     transform: translateY(-3px);
 }
 
-.socialIcons a i {
+.footer-social-icons a i {
 
     font-size: 2em;
     color: black;
@@ -494,15 +493,15 @@ footer {
     transition: 0.5s;
 }
 
-.socialIcons a:hover i {
+.footer-social-icons a:hover i {
     color: white;
 }
 
-.footerNav {
+.footer-navigator {
     margin: 30px 0;
 }
 
-.footerNav ul {
+.footer-navigator ul {
     display: flex;
     justify-content: center;
     /*centers horizontal*/
@@ -510,7 +509,7 @@ footer {
     /*Keine Aufzählungspunkte*/
 }
 
-.footerNav ul li a {
+.footer-navigator ul li a {
     color: white;
     margin: 20px;
     text-decoration: none;
@@ -519,21 +518,21 @@ footer {
     transition: 0.5s;
 }
 
-.footerNav ul li a:hover {
+.footer-navigator ul li a:hover {
     opacity: 1;
 }
 
-.footerBottom {
+.footer-credits {
     background-color: #000;
     padding: 20px;
     text-align: center;
 }
 
-.footerBottom p {
+.footer-credits p {
     color: white;
 }
 
-.designer {
+.footer-credits-designer {
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
