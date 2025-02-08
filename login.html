@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anmelden</title>
-
     <link rel="stylesheet" href="login.css" />
     <script src="login.js"></script>
   </head>
@@ -13,25 +12,22 @@
       <h1 class="title">Registrieren</h1>
 
       <form>
-        <div class="name">
+        <div>
           <label for="name">Name</label>
-          <input class="name" id="name" type="text" name="name" placeholder="Name" required/>
+          <input id="name" type="text" placeholder="Name" required/>
         </div>
 
-        <div class="mail">
+        <div>
           <label for="mail">E-Mail</label>
-          <input class="mail" id="mail" type="email" name="mail" placeholder="E-Mail" required/>
+          <input id="mail" type="email" placeholder="E-Mail" required/>
         </div>
 
-        <div class="password">
+        <div>
           <label for="password">Passwort</label>
-          <input class="password" id="password" type="password" name="password" placeholder="Passwort" required/>
+          <input id="password" type="password" placeholder="Passwort" required/>
         </div>
 
-        <p class="change-method">
-          Hast du schon ein Konto?
-          <a class="change-button" href="#" onclick="toggleForms()">Anmelden</a>
-        </p>
+        <p class="change-method">Hast du schon ein Konto? <a class="change-button" href="#" onclick="toggleForms()">Anmelden</a></p>
 
         <input class="submit" type="submit" value="Registrieren" />
 
@@ -43,22 +39,17 @@
       <h1 class="title">Login</h1>
 
       <form>
-        <div class="mail">
+        <div>
           <label for="mail">E-Mail</label>
-          <input class="mail" id="mail" type="email" name="mail" placeholder="E-Mail" required/>
+          <input id="mail" type="email" placeholder="E-Mail" required/>
         </div>
 
-        <div class="password">
+        <div>
           <label for="password">Passwort</label>
-          <input class="password" id="password" type="password" name="password" placeholder="Passwort" required/>
+          <input id="password" type="password" placeholder="Passwort" required/>
         </div>
 
-        <p class="change-method">
-          Noch kein Konto?
-          <a class="change-button" href="#" onclick="toggleForms()"
-            >Registrieren</a
-          >
-        </p>
+        <p class="change-method">Noch kein Konto? <a class="change-button" href="#" onclick="toggleForms()">Registrieren</a></p>
 
         <input class="submit" type="submit" value="Anmelden" />
 

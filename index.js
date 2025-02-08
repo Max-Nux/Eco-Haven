@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const user = JSON.parse(localStorage.getItem("user")) || {
         isLoggedIn: false,
-        username: "",
-        profileImage: "profile_picures/default.jpg"
+        username: "Username",
+        profileImage: "images/profile_picures/username.jpg"
     };
 
     const accountMenu = document.getElementById("account-menu");
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         accountMenu.innerHTML = `
             <div class="menu-account">
                 <a href="login.html" class="menu-account-link">
-                    <img src="profile_picures/default.jpg" class="profile-img" />
+                    <img src="images/profile_picures/default.jpg" class="profile-img" />
                     <span class="username-text">Anmelden</span>
                 </a>
             </div>
