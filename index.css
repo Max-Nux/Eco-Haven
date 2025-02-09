@@ -8,8 +8,7 @@ body {
     background-color: #daeafc;
 }
 
-html,
-body {
+html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -589,16 +588,16 @@ body {
 
 /* Newsletter */
 
-.subscribe-to-newsletter-container {
+.newsletter-panel-container {
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.subscribe-to-newsletter-container h2 {
+.newsletter-panel-container h2 {
     margin-top: 60px;
 }
 
-.subscribe-to-newsletter {
+.newsletter-container {
     background-color: #7ea3bf;
     left: 50%;
     transform: translateX(65%);
@@ -608,11 +607,11 @@ body {
     width: 40%;
     transition: ease 0.5s;
 }
-.subscribe-to-newsletter:hover {
+.newsletter-container:hover {
     transform: translateX(65%) scale(1.03);
 }
 
-.subscribe-to-newsletter input {
+.newsletter-email {
     width: 70%;
     padding: 10px;
     margin-bottom: 15px;
@@ -623,7 +622,7 @@ body {
     transition: ease 0.5s;
     font-size: 18px;
 }
-.subscribe-to-newsletter input:hover {
+.newsletter-email:hover {
     transform: scale(1.03)
 }
 
@@ -653,6 +652,7 @@ body {
     text-align: center;
     color: #ffffff;
     margin-bottom: -20px;
+    cursor: default;
 }
 
 
