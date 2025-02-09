@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const user = JSON.parse(localStorage.getItem("user")) || {
         isLoggedIn: false,
-        username: "Username",
-        profileImage: "images/profile_picures/username.jpg"
+        username: "Jamal Brown",
+        profileImage: "images/profile_picures/brown.jpg"
     };
 
     const accountMenu = document.getElementById("account-menu");
