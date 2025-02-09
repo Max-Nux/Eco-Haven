@@ -562,6 +562,12 @@ body {
 }
 .reference:hover {
     transform: scale(1.03);
+
+}
+
+.reference-container:hover .reference:not(:hover) {          /* When hovering on a reference, blur the others */
+    filter: blur(3px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .reference-profile {
