@@ -331,11 +331,13 @@ body {
 .information-slider-container {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .information-events-container {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 
 .information-container-1 {
@@ -508,8 +510,8 @@ body {
     background-color: #7ea3bf;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 20px;
-    padding-bottom: 130px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     border-radius: 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
     transition: ease 0.5s;
@@ -536,6 +538,11 @@ body {
 
 
 /* Newsletter */
+
+.subscribe-to-newsletter-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 .subscribe-to-newsletter-container h2 {
     margin-top: 60px;
