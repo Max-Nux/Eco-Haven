@@ -6,7 +6,7 @@ body {
     background-color: #d4d4d4;
     color: #333;
 
-    background-image: url("images/iceberg-background.jpg");
+    background-image: url("/images/iceberg-background.jpg");
 
     display: flex;
     justify-content: center;

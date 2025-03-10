@@ -7,7 +7,7 @@ body {
     color: #333;
     padding: 20px;
     text-align: center;
-    background-image: url("images/iceberg-background.jpg");
+    background-image: url("/images/iceberg-background.jpg");
 
     display: flex;
     justify-content: center;

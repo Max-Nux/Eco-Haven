@@ -61,13 +61,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         document.getElementById("logout").addEventListener("click", function () {
             localStorage.removeItem("user");
-            window.location.href = "login.html";
+            window.location.href = "/login/login.html";
         });
 
     } else {
         accountMenu.innerHTML = `
             <div class="menu-account">
-                <a href="login.html" class="menu-account-link">
+                <a href="/login/login.html" class="menu-account-link">
                     <img src="images/profile_picures/default.jpg" class="profile-img" />
                     <span class="username-text">Anmelden</span>
                 </a>
